@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://change-this-to-the-site-you-are-testing/" />
+<title>registered_doctor</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">registered_doctor</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>09/12/1984</td>
+	<td>P_datebirth</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>050-7909966</td>
+	<td>P_telephon</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>chaim</td>
+	<td>P_street</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>3</td>
+	<td>P_numbHouse</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Linkcare!!11</td>
+	<td>P_parol</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>petah</td>
+	<td>P_town</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 8)}</td>
+	<td>P_nikName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>rita</td>
+	<td>P_firstName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>gonzales</td>
+	<td>P_lastName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>${P_firstName} ${P_lastName}</td>
+	<td>P_fullName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>276292307</td>
+	<td>P_ID</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>${P_nikName}</td>
+	<td>P_klinika</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>${P_nikName}@yopmail.com</td>
+	<td>P_mail</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://dhclinicappv2stg.item-soft.co.il/Login.aspx</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=MainContent_LoginUser_RegisterHyperLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=ctl00$MainContent$RegisterUser$CreateUserStepContainer$birthdayTxt$dateInput</td>
+	<td>${P_datebirth}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@id='MainContent_RegisterUser_CreateUserStepContainer_AddressTxt']</td>
+	<td>${P_street}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//*[@id='ctl00_MainContent_RegisterUser_CreateUserStepContainer_ContactCellTxt']</td>
+	<td>${P_telephon}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='ctl00$MainContent$RegisterUser$CreateUserStepContainer$HouseNumberTxt']</td>
+	<td>${P_numbHouse}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=ctl00$MainContent$RegisterUser$CreateUserStepContainer$CityTxt</td>
+	<td>${P_town}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_UserName</td>
+	<td>${P_nikName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_firstNameTxt</td>
+	<td>${P_firstName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_lastNameTxt</td>
+	<td>${P_lastName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_Email</td>
+	<td>${P_mail}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_Password</td>
+	<td>${P_parol}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_ConfirmPassword</td>
+	<td>${P_parol}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_PersonalIdTxt</td>
+	<td>${P_ID}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_clinicNameTxt</td>
+	<td>${P_klinika}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_OrganizationDDL</td>
+	<td>label=תת ארגון</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=MainContent_AddNewUser</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_CreateUserButton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Top1_HeadLoginStatus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=Top1_HeadLoginStatus</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Top1_HeadLoginView_DisplayName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=Top1_HeadLoginView_DisplayName</td>
+	<td>${P_fullName}</td>
+</tr>
+</tbody></table>
+</body>
+</html>
