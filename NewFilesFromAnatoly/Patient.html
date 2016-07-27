@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://docs.seleniumhq.org/" />
+<title>Patient</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Patient</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>fnameC lnameC</td>
+	<td>userName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>user6</td>
+	<td>userLogin</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>gfhjkm1029</td>
+	<td>userPassword</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>308326578</td>
+	<td>id</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://dhclinicappv2stg.item-soft.co.il/Login.aspx</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[contains(@name,'UserName')]</td>
+	<td>${userLogin}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[contains(@name,'Password')]</td>
+	<td>${userPassword}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[contains(@name,'LoginButton')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//*[@id='Top1_HeadLoginStatus']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@class='CommandLineGrid']/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@class='CommandLineGrid']/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=MainContent_AddEditAccount1_firstNameTxt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 8)}</td>
+	<td>fname</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 8)}</td>
+	<td>lname</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[contains(@id,'firstName') ]</td>
+	<td>${fname}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[contains(@id,'lastName') ]</td>
+	<td>${lname}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[contains(@id,'PersonalPatient') ]</td>
+	<td>${id}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_AddEditAccount1_rdp_birthDate_dateInput</td>
+	<td>01.01.2010</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_AddEditAccount1_rdp_birthDate_dateInput</td>
+	<td>01.01.2010</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_AddEditAccount1_rdp_birthDate</td>
+	<td>2010-01-01</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_AddEditAccount1_rtb_Weight</td>
+	<td>40</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_AddEditAccount1_TxtPatientEmail</td>
+	<td>m${id}@mail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_AddEditAccount1_TxtPatientEmail</td>
+	<td>m${id}@mail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_AddEditAccount1_TxtSearchCellPhone</td>
+	<td>052-1111111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_AddEditAccount1_TxtSearchCellPhone</td>
+	<td>052-1111111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_AddEditAccount1_TxtsearchMail</td>
+	<td>abc@mail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_AddEditAccount1_TxtsearchMail</td>
+	<td>abc@mail.com</td>
+</tr>
+<!---->
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_AddEditAccount1_rdp_birthDate_dateInput</td>
+	<td>01/01/2010</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_AddEditAccount1_rdp_birthDate</td>
+	<td>2010-01-01</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ctl00_MainContent_AddEditAccount1_BtnSearch</td>
+	<td></td>
+</tr>
+<!---->
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_AddEditAccount1_RDTmeetingdate_dateInput</td>
+	<td>15.08.2016</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_AddEditAccount1_RDTmeetingdate_dateInput</td>
+	<td>15.08.2016</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_AddEditAccount1_RDTmeetingdate</td>
+	<td>2016-08-15-00-00-00</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnAddLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ctl00_MainContent_AddEditAccount1_RDTmeetingdate_dateInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_AddEditAccount1_RDTmeetingdate_dateInput</td>
+	<td>01.01.2017</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_AddEditAccount1_RDTmeetingdate_dateInput</td>
+	<td>01.01.2017</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_AddEditAccount1_RDTmeetingdate</td>
+	<td>2017-01-01-10-00-00</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnAddLink</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ctl00_MainContent_AddEditAccount1_RDTmeetingdate_dateInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=MainContent_AddEditAccount1_SaveAccount</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>הנתונים נשמרו בהצלחה!</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
