@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://dhclinicappv2stg.item-soft.co.il/Login.aspx" />
+<title>registretion</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">registretion</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 8)}</td>
+	<td>logName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 8)}</td>
+	<td>firstName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 8)}</td>
+	<td>lastName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.floor(Math.random() * (4043430))}</td>
+	<td>phoneNamber</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 8)}</td>
+	<td>email</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>http://dhclinicappv2stg.item-soft.co.il/SitePages/createUser.aspx?ReturnUrl=HomePage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_UserName</td>
+	<td>${logName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_firstNameTxt</td>
+	<td>${firstName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_lastNameTxt</td>
+	<td>${lastName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_Email</td>
+	<td>${email}@netaddress.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_Password</td>
+	<td>1107andrey</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_ConfirmPassword</td>
+	<td>1107andrey</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_PersonalIdTxt</td>
+	<td>084719038</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_RegisterUser_CreateUserStepContainer_birthdayTxt_dateInput</td>
+	<td>22.07.1941</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_RegisterUser_CreateUserStepContainer_birthdayTxt_dateInput</td>
+	<td>22.07.1941</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_RegisterUser_CreateUserStepContainer_birthdayTxt</td>
+	<td>1941-07-22</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_RegisterUser_CreateUserStepContainer_ContactCellTxt</td>
+	<td>053${phoneNamber}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_RegisterUser_CreateUserStepContainer_ContactCellTxt</td>
+	<td>053${phoneNamber}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_RegisterUser_CreateUserStepContainer_ContactPhoneTxt</td>
+	<td>03${phoneNamber}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=ctl00_MainContent_RegisterUser_CreateUserStepContainer_ContactPhoneTxt</td>
+	<td>03${phoneNamber}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_AddressTxt</td>
+	<td>rubina</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_HouseNumberTxt</td>
+	<td>11</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_CityTxt</td>
+	<td>tel-aviv</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_CityTxt</td>
+	<td>ישראל</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_clinicNameTxt</td>
+	<td>javascript{Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 8)}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=MainContent_AddNewUser</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=MainContent_RegisterUser_CreateUserStepContainer_CreateUserButton</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
